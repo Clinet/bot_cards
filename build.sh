@@ -1,6 +1,6 @@
 #!/bin/bash
 # Please use govvv when possible! (go install github.com/JoshuaDoes/govvv@latest)
-
+set -e
 export GO111MODULE="on"
 export GOOS=linux
 export GOARCH=amd64
