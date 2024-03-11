@@ -1,2 +1,2 @@
 cls
-.\clinet.exe --verbosity 2
+.\loredeck.exe --verbosity 2

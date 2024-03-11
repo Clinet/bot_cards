@@ -20,7 +20,7 @@ stacktrace.txt
 *.old
 
 # Most probable output executables for Linux
-clinet
+loredeck
 
 # Log files
 *.log

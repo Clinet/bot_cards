@@ -14,23 +14,15 @@ import (
 	"github.com/Clinet/clinet_config"
 	"github.com/Clinet/clinet_features"
 
-	//Clinet's features
-	"github.com/Clinet/clinet_features_dumpctx"
-	"github.com/Clinet/clinet_features_essentials"
-	"github.com/Clinet/clinet_features_hellodolly"
-	"github.com/Clinet/clinet_features_moderation"
-	"github.com/Clinet/clinet_features_voice"
+	//Lore Deck's features
+	"github.com/Clinet/clinet_features_cards"
 
-	//Clinet's services
-	"github.com/Clinet/clinet_convos_chatgpt"
-	"github.com/Clinet/clinet_convos_duckduckgo"
-	"github.com/Clinet/clinet_convos_wolframalpha"
+	//Lore Deck's services
 	"github.com/Clinet/clinet_services_discord"
-	"github.com/Clinet/clinet_services_guilded"
 )
 
-var clinet *bot.Bot
-var log    *logger.Logger
+var sock *bot.Bot
+var log  *logger.Logger
 
 func doBot() {
 	log = logger.NewLogger("bot", verbosity)
@@ -54,40 +46,21 @@ func doBot() {
 	log.Debug("Syncing format of features file...")
 	cfg.SaveTo(featuresFile, config.ConfigTypeJSON)
 
-	//Initialize Clinet using the configuration provided
-	log.Info("Initializing instance of Clinet...")
-	clinet = bot.NewBot(cfg)
+	//Initialize Lore Deck using the configuration provided
+	log.Info("Initializing instance of Lore Deck...")
+	sock = bot.NewBot(cfg)
 
-	//Clinet is effectively online at this stage, so defer shutdown in case of errors below
-	defer clinet.Shutdown()
-
-	//Register the conversation services to handle queries
-	log.Debug("Registering conversation services...")
-	log.Trace("- duckduckgo")
-	logFatalError(clinet.RegisterFeature(duckduckgo.Feature))
-	log.Trace("- wolframalpha")
-	logFatalError(clinet.RegisterFeature(wolframalpha.Feature))
-	log.Trace("- chatgpt")
-	logFatalError(clinet.RegisterFeature(chatgpt.Feature))
+	//Lore Deck is effectively online at this stage, so defer shutdown in case of errors below
+	defer sock.Shutdown()
 
 	//Register the features to handle commands
 	log.Debug("Registering features...")
-	log.Trace("- dumpctx")
-	logFatalError(clinet.RegisterFeature(dumpctx.Feature))
-	log.Trace("- hellodolly")
-	logFatalError(clinet.RegisterFeature(hellodolly.Feature))
-	log.Trace("- moderation")
-	logFatalError(clinet.RegisterFeature(moderation.Feature))
-	log.Trace("- voice")
-	logFatalError(clinet.RegisterFeature(voice.Feature))
-	log.Trace("- essentials")
-	logFatalError(clinet.RegisterFeature(essentials.Feature)) //ALWAYS REGISTER ESSENTIALS LAST BEFORE CHAT SERVICES!
+	log.Trace("- cards")
+	logFatalError(sock.RegisterFeature(cards.Feature))
 
 	log.Debug("Registering chat services...")
 	log.Trace("- discord")
-	logFatalError(clinet.RegisterFeature(discord.Feature))
-	log.Trace("- guilded")
-	logFatalError(clinet.RegisterFeature(guilded.Feature))
+	logFatalError(sock.RegisterFeature(discord.Feature))
 
 	if writeFeaturesTemplate {
 		log.Debug("Updating features template...")
@@ -96,7 +69,7 @@ func doBot() {
 		templateCfg.SaveTo("features.template.json", config.ConfigTypeJSON)
 	}
 
-	log.Info("Clinet is now online!")
+	log.Info("Lore Deck is now online!")
 
 	log.Debug("Waiting for SIGINT syscall signal...")
 	sc := make(chan os.Signal, 1)
@@ -111,3 +84,4 @@ func logFatalError(err error) {
 		log.Fatal(err)
 	}
 }
+

@@ -1,2 +1,2 @@
 #!/bin/sh
-./clinet.app --verbosity 2
+./loredeck.app --verbosity 2
