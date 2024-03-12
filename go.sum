@@ -20,6 +20,12 @@ github.com/Clinet/clinet_features_cards v0.0.0-20240311031410-2f83bd51a116 h1:9V
 github.com/Clinet/clinet_features_cards v0.0.0-20240311031410-2f83bd51a116/go.mod h1:ciFnMxOA2QMbLDgElkGDZzkrHpahkb2NNJ72k2Vt5jc=
 github.com/Clinet/clinet_features_cards v0.0.0-20240311031639-c77d1e1daeae h1:BsbUNogolnhMgUbwf6oq6ctbsw4fDj3ylE/z/4hEvJk=
 github.com/Clinet/clinet_features_cards v0.0.0-20240311031639-c77d1e1daeae/go.mod h1:ciFnMxOA2QMbLDgElkGDZzkrHpahkb2NNJ72k2Vt5jc=
+github.com/Clinet/clinet_features_cards v0.0.0-20240312201657-d4c9e3005e35 h1:bHcMmURriBxOFB4TrcEiiS+2r7FX3zc0EtPAm55xt2U=
+github.com/Clinet/clinet_features_cards v0.0.0-20240312201657-d4c9e3005e35/go.mod h1:ciFnMxOA2QMbLDgElkGDZzkrHpahkb2NNJ72k2Vt5jc=
+github.com/Clinet/clinet_features_cards v0.0.0-20240312203452-8c1670f0f835 h1:1bA4Y147tI0wfOvwr8b1DtsMOBNsmDt4VPAJPdgXkM0=
+github.com/Clinet/clinet_features_cards v0.0.0-20240312203452-8c1670f0f835/go.mod h1:ciFnMxOA2QMbLDgElkGDZzkrHpahkb2NNJ72k2Vt5jc=
+github.com/Clinet/clinet_features_cards v0.0.0-20240312203613-742bdb2fbc01 h1:7AzqCtw/XcCThR0lSZhjW7hEOpMQ9XwswiaXLfn+02c=
+github.com/Clinet/clinet_features_cards v0.0.0-20240312203613-742bdb2fbc01/go.mod h1:ciFnMxOA2QMbLDgElkGDZzkrHpahkb2NNJ72k2Vt5jc=
 github.com/Clinet/clinet_services v0.0.0-20221115093202-3b5bd50f66ca h1:9H7nYpo/cEs9MS5Rq21hf7sE1kau7GoJJeB5Rgkx8Pk=
 github.com/Clinet/clinet_services v0.0.0-20221115093202-3b5bd50f66ca/go.mod h1:OCs+vb6rwUVgN6xUP2+sR8oK7dz62moETKkifW8ACO4=
 github.com/Clinet/clinet_services v0.0.0-20221210012553-759c9da9d88b h1:Nd18E1bGTl2Aemn+bhsxGaYWaLVl4R14iLxwpgQ8PTQ=
@@ -58,6 +64,8 @@ github.com/Clinet/clinet_storage v0.0.0-20221121090856-130045705654 h1:jxJuVJvSC
 github.com/Clinet/clinet_storage v0.0.0-20221121090856-130045705654/go.mod h1:ye3za1AqBynaF9fp0ok/gUHUNw6Cbmy0TgZybVIAFIQ=
 github.com/Clinet/clinet_storage v0.0.0-20221210013625-2296e31efe8b h1:pKHK4XnsdHSETf7REwnjq0YKsBTzrA6uzqCq/s9AYjc=
 github.com/Clinet/clinet_storage v0.0.0-20221210013625-2296e31efe8b/go.mod h1:RxXeAgXRcI9vjCRAuz64Kqc3JHezxls3iVRT3LE8/OY=
+github.com/Clinet/clinet_storage v0.0.0-20240312195256-445d76188f94 h1:8xzQSn2GR5asP/JyR46317LfsV8/RJcrzyFoS2leIdo=
+github.com/Clinet/clinet_storage v0.0.0-20240312195256-445d76188f94/go.mod h1:RxXeAgXRcI9vjCRAuz64Kqc3JHezxls3iVRT3LE8/OY=
 github.com/Clinet/clinet_watchdog v0.0.0-20221210013641-41f456c9294f h1:aPvp5G+6tjhSohMXpBQzGKOMH+5DOgvJcdAy06y5Zbc=
 github.com/Clinet/clinet_watchdog v0.0.0-20221210013641-41f456c9294f/go.mod h1:/68xHXo4JacG4+sCbOIC0O3WWLoKVBAgC+WbKRWGJoI=
 github.com/Clinet/discordgo-embed v0.0.0-20220113222025-bafe0c917646 h1:KkKIDMzyOhNnW5ew6KpRvEflciWqo09NmgVGqTZEj3M=

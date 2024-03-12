@@ -7,11 +7,13 @@ require (
 	github.com/Clinet/clinet_config v0.0.0-20221210013000-0ce674feda19
 	github.com/Clinet/clinet_features v0.0.0-20221210013248-ee30597ec785
 	github.com/Clinet/clinet_features_cards v0.0.0
-	github.com/Clinet/clinet_services_discord v0.0.0-20240311114105-71fbbde9a9c3
+	github.com/Clinet/clinet_services_discord v0.0.0
 	github.com/Clinet/clinet_watchdog v0.0.0-20221210013641-41f456c9294f
 	github.com/JoshuaDoes/logger v0.0.0-20200726212032-d5769a4e6d6b
 	github.com/spf13/pflag v1.0.5
 )
+
+replace github.com/Clinet/clinet_services_discord v0.0.0 => ../clinet_services_discord
 
 replace github.com/Clinet/clinet_features_cards v0.0.0 => ../clinet_features_cards
 
@@ -21,7 +23,7 @@ require (
 	github.com/Clinet/clinet_cmds v0.0.0 // indirect
 	github.com/Clinet/clinet_convos v0.0.0-20221210012027-bbbe7c3316b0 // indirect
 	github.com/Clinet/clinet_services v0.0.0-20240311092510-bbb0b54abf91 // indirect
-	github.com/Clinet/clinet_storage v0.0.0-20221210013625-2296e31efe8b // indirect
+	github.com/Clinet/clinet_storage v0.0.0-20240312195256-445d76188f94 // indirect
 	github.com/Clinet/discordgo-embed v0.0.0-20220113222025-bafe0c917646 // indirect
 	github.com/JoshuaDoes/go-wolfram v0.0.0-20181104014914-c99b0fd7d862 // indirect
 	github.com/JoshuaDoes/json v0.0.0-20200726213358-ec3860544ac0 // indirect
