@@ -1,6 +1,6 @@
 module github.com/Clinet/bot_loredeck
 
-go 1.22.0
+go 1.21.6
 
 require (
 	github.com/Clinet/clinet_bot v0.0.0-20221210012751-bd9d89234d35
